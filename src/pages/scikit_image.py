@@ -3,9 +3,9 @@ import utils.display as udisp
 
 import streamlit as st
 import core.imageprocessing.scikitImageEngine as ScikitEngine
+import core.Bill.CalcEngine as CalcEngine
 
 def write():
-    udisp.title_awesome("Image Processing")
-    ScikitEngine.calc_main("Scikit Image", "A Scikit Image Demo")
+    udisp.title_awesome("Generate Bill")
+    CalcEngine.calc_main("Bill", "Generate Bill")
 
-    st.write("@avkashchauhan")

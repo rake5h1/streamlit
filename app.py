@@ -4,15 +4,15 @@ import utils.display as udisp
 
 import src.pages.home
 import src.pages.about
-import src.pages.calculator
+import src.pages.Test
 import src.pages.compound
 import src.pages.scikit_image
 
 MENU = {
-    "Home" : src.pages.home,
-    "Simple Calculator" : src.pages.calculator,
-    "Calculate Compound Interest" : src.pages.compound,
-    "Scikit Image Demo" : src.pages.scikit_image,
+    "Register" : src.pages.home,
+    "Lab Report" : src.pages.Test,
+    "Patient Expenses" : src.pages.compound,
+    "Generate Bill" : src.pages.scikit_image,
     "Credits" : src.pages.about
 }
 
