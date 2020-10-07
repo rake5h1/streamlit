@@ -1,1 +1,1 @@
-{"_default": {}}
+{"_default": {"1": {"id": 631907667.0, "name": "Rakesh Bhaskar Kapgate", "age": 20, "phone": 9834450775, "email": "abc@xyz.COM", "date": "2020-10-07", "time": "10:07:00", "symptoms": {"fever": true, "cough": true, "breathingproblem": false, "diarrohea": true, "tiredness": true}, "report": "NA", "dis_date": "2020-10-07"}}}

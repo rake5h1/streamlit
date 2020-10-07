@@ -3,17 +3,25 @@ import streamlit as st
 import utils.display as udisp
 
 import src.pages.home
-import src.pages.about
+import src.pages.beds
 import src.pages.Test
-import src.pages.compound
-import src.pages.scikit_image
+import src.pages.expenses
+import src.pages.billing
+import src.pages.symptoms
+import src.pages.discharge
+import src.pages.showexpenses
+import src.pages.getresult
 
 MENU = {
     "Register": src.pages.home,
     "Lab Report": src.pages.Test,
-    "Patient Expenses": src.pages.compound,
-    "Generate Bill": src.pages.scikit_image,
-    "Available Beds": src.pages.about,
+    "Available Beds": src.pages.beds,
+    "Get Test Results": src.pages.getresult,
+    "Patient Symptoms": src.pages.symptoms,
+    "Patient Expenses": src.pages.expenses,
+    "Generate Bill": src.pages.billing,
+    "Discharge": src.pages.discharge,
+    "Show Expenses": src.pages.showexpenses,
 }
 
 

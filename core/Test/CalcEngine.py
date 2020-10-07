@@ -17,9 +17,10 @@ def calc_main(title, subtitle):
     )
     id=st.number_input('Patient Id')
     result=st.text_input('Test Result')
+    date=st.date_input('Date')
     if st.button('Clear Test DB'):
         db.truncate()
     if st.button('Set Test Result'):
-        db.insert({'report':result,'id':int(id)})
+        db.insert({'report':result,'id':int(id),'date':str(date)})
 
     

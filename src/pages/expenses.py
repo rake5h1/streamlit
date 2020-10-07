@@ -2,7 +2,7 @@ import pathlib
 import utils.display as udisp
 
 import streamlit as st
-import core.compound.CalcEngine as CalcEngine
+import core.expenses.CalcEngine as CalcEngine
 
 def write():
     udisp.title_awesome("Expenses")

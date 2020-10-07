@@ -17,11 +17,15 @@ def write():
     address=st.text_input('Address')
     date=st.date_input('Date')
     time=st.time_input('Time')
-    report=st.text_input('Test Result')
+    # report=st.text_input('Test Result')
     id=random.getrandbits(30)
     # doc=st.radio('Doctor',['Dr. A','Dr. B'])
     db=TinyDB('patients.json')
-  
+    fever=False
+    cough=False
+    breathingproblem=False
+    diarrohea=False
+    tiredness=False
    
     if st.checkbox('Has Fever ?'):
         fever=True
@@ -38,7 +42,7 @@ def write():
     if st.button('Button'):
         # res=rs.get("https://jsonplaceholder.typicode.com/posts")
         # st.write(res.text)
-        db.insert({'id':id,'name': name, 'age': int(age),'phone':int(phone),'email':str(email),'date':str(date),'time':str(time)})
+        db.insert({'id':id,'name': name, 'age': int(age),'phone':int(phone),'email':str(email),'date':str(date),'time':str(time),'symptoms':{'fever':fever,'cough':cough,'breathingproblem':breathingproblem,'diarrohea':diarrohea,'tiredness':tiredness},'report':'NA'})
         for item in db:
             st.write(f'Patient Id:{id}')
             
