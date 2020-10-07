@@ -9,12 +9,13 @@ import src.pages.compound
 import src.pages.scikit_image
 
 MENU = {
-    "Register" : src.pages.home,
-    "Lab Report" : src.pages.Test,
-    "Patient Expenses" : src.pages.compound,
-    "Generate Bill" : src.pages.scikit_image,
-    "Credits" : src.pages.about
+    "Register": src.pages.home,
+    "Lab Report": src.pages.Test,
+    "Patient Expenses": src.pages.compound,
+    "Generate Bill": src.pages.scikit_image,
+    "Available Beds": src.pages.about,
 }
+
 
 def main():
     st.sidebar.title("Navigate yourself...")

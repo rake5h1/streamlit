@@ -5,6 +5,10 @@ import numpy as np
 
 import utils.display as display
 import utils.globalDefine as globalDefine
+from tinydb import TinyDB, Query
+
+db=TinyDB('reports.json')
+
 
 def calc_main(title, subtitle):
     st.sidebar.title(title)
@@ -13,7 +17,9 @@ def calc_main(title, subtitle):
     )
     id=st.number_input('Patient Id')
     result=st.text_input('Test Result')
+    if st.button('Clear Test DB'):
+        db.truncate()
     if st.button('Set Test Result'):
-        st.write('Positive')
+        db.insert({'report':result,'id':int(id)})
 
     
